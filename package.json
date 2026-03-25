@@ -1,0 +1,36 @@
+{
+  "name": "revealjs-pdf-export",
+  "version": "1.0.0",
+  "description": "Export Reveal.js presentations to PDF via browser screenshots",
+  "main": "dist/index.js",
+  "bin": {
+    "revealjs-pdf-export": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "revealjs",
+    "reveal.js",
+    "pdf",
+    "export",
+    "presentation",
+    "slides"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "commander": "^14.0.3",
+    "pdf-lib": "^1.17.1",
+    "puppeteer": "^24.40.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0"
+  }
+}
